@@ -1,9 +1,14 @@
-import React from "react"
-import logo from "./logo.svg"
 import "./App.scss"
-
+import getLocation from "./components/getData"
+import apiKey from "./components/apikey"
 function App() {
-    return <p>Hello World</p>
+    console.log(getLocation("Tokyo", apiKey))
+
+    return (
+        <>
+            <p>Hello World</p>
+        </>
+    )
 }
 
 export default App
