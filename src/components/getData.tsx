@@ -7,7 +7,7 @@ export default async function getLocation(city: string, apiKey: string) {
             { mode: "cors" }
         )
         const result: object = await response.json()
-        return result
+        console.log(result)
     } catch (error) {
         console.log(`ERROR: ${error}`)
     }

@@ -1,4 +1,89 @@
 * {
-    margin: 0rem;
-    padding: 0rem;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+$font-colour: rgb(226, 225, 225);
+$font-family: "Prompt", sans-serif;
+
+body {
+    // background: url(./assets/rainggif.gif) no-repeat center center fixed;
+    background-color: rgb(42, 42, 42);
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        h1 {
+            color: $font-colour;
+            font-family: $font-family;
+            font-size: 2.5rem;
+            font-weight: 800;
+        }
+
+        p {
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: $font-colour;
+            font-family: $font-family;
+        }
+
+        h1.clouds {
+            font-weight: 400;
+        }
+
+        .change-temp-type-C {
+            display: none;
+        }
+
+        .main-img {
+            width: 6rem;
+            margin: 1rem;
+        }
+        .search-bar {
+            display: flex;
+            border-bottom: 2px solid white;
+        }
+
+        input[type="text"] {
+            background: rgba(0, 0, 0, 0.492);
+            color: white;
+            border: none;
+            border-top-left-radius: 10px;
+        }
+        input[type="text"]:focus {
+            outline: none;
+        }
+
+        .magnifiying-glass {
+            filter: invert(1);
+            padding: 0.2rem;
+            background: rgba(255, 255, 255, 0.492);
+            border-top-right-radius: 10px;
+            width: 2rem;
+        }
+    }
+}
+
+@media (min-width: 1127px) {
+    body {
+        main {
+            h1 {
+                font-size: 5em;
+            }
+
+            p {
+                font-size: 1.9em;
+            }
+
+            .main-img {
+                width: 10rem;
+            }
+        }
+    }
 }
