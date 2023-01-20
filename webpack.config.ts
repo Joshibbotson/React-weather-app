@@ -28,6 +28,13 @@ module.exports = {
                     "sass-loader",
                 ],
             },
+
+            {
+                name: "my-project",
+                jest: {
+                    verbose: true,
+                },
+            },
         ],
     },
     plugins: [
